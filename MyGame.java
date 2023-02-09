@@ -43,10 +43,10 @@ public class MyGame extends Game  {
 
     @Override
     public void keyPressed(KeyEvent ke) {
-        if(ke.getKeyCode() == 68){
+        if(ke.getKeyCode() == 68 || ke.getKeyCode() == 37){
             activeBlock.right(grid);
         }
-        if(ke.getKeyCode() == 65){
+        if(ke.getKeyCode() == 65 || ke.getKeyCode() == 39){
             activeBlock.left(grid);
         }
     }
